@@ -13,19 +13,24 @@
         </Grid.ColumnDefinitions>
         <CheckBox x:Name="checkBoxCurrent" Content="Current Account" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="32,29,0,0"/>
         <CheckBox x:Name="checkBoxSavings" Content="Savings Accounts" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="156,29,0,0"/>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="248" VerticalAlignment="Top" Width="195" Margin="32,87,0,0"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="248" VerticalAlignment="Top" Width="195" Margin="32,87,0,0" SelectionChanged="listBox_SelectionChanged"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Account Type" VerticalAlignment="Top" Margin="32,58,0,0"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Account Details" VerticalAlignment="Top" Margin="270,58,0,0" Width="151"/>
-        <TextBlock x:Name="textBlockFirstName" HorizontalAlignment="Left" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Margin="270,87,0,0"/>
-        <TextBlock x:Name="textBlockLastName" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Margin="270,117,0,0"/>
-        <TextBlock x:Name="textBlockBalance" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Balance" VerticalAlignment="Top" Margin="270,150,0,0"/>
-        <TextBlock x:Name="textBlockAccountType" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Account Type" VerticalAlignment="Top" Margin="270,184,0,0"/>
-        <TextBlock x:Name="textBlockInterestDate" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Interest Date" VerticalAlignment="Top" Margin="270,219,0,0"/>
+        <TextBlock x:Name="textBlockFirstName" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="392,87,0,0"/>
+        <TextBlock x:Name="textBlockLastName" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="392,120,0,0"/>
+        <TextBlock x:Name="textBlockBalance" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="392,153,0,0"/>
+        <TextBlock x:Name="textBlockAccountType" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="392,190,0,0"/>
+        <TextBlock x:Name="textBlockInterestDate" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="392,222,0,0"/>
         <Button x:Name="buttonDeposit" Content="Deposit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="534,58,0,0" Click="buttonDeposit_Click"/>
         <Button x:Name="buttonWithdraw" Content="Withdraw" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="534,102,0,0" Click="buttonWithdraw_Click"/>
         <Button x:Name="buttonInterest" Content="Interest" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="534,146,0,0" Click="buttonInterest_Click"/>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Transaction Amount" VerticalAlignment="Top" Margin="270,248,0,0"/>
-        <TextBox x:Name="textBoxTransactionAmount" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="408,247,0,0" GotFocus="textBoxTransactionAmount_GotFocus"/>
+        <TextBox x:Name="textBoxTransactionAmount" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="392,241,0,0" GotFocus="textBoxTransactionAmount_GotFocus"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Margin="270,90,0,0"/>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Margin="271,123,0,0"/>
+        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Balance" VerticalAlignment="Top" Margin="271,156,0,0"/>
+        <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Account Type" VerticalAlignment="Top" Margin="270,190,0,0"/>
+        <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Interest Date" VerticalAlignment="Top" Margin="270,222,0,0"/>
 
     </Grid>
 </Window>

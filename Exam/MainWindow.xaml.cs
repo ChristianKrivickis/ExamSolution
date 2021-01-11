@@ -32,19 +32,22 @@ namespace Exam
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            // Part time employees (First name, last name, status, hourly rate, hours worked)
+            // 
             CurrentAccount ca1 = new CurrentAccount("Jane", "Jones", 45748275, 1500);
             CurrentAccount ca2 = new CurrentAccount("John", "Smith", 679569, 30000);
 
-            // Full time employees (First name, last name, status, salary)
+            // 
             SavingsAccount sa1 = new SavingsAccount("Joe", "Murphy", 95684, 4000);
             SavingsAccount sa2 = new SavingsAccount("Jess", "Walsh", 7535737, 9999);
 
-            // Added Full time and Part time employees to observable list
+            // 
             Accounts.Add(ca1);
             Accounts.Add(ca2);
             Accounts.Add(sa1);
             Accounts.Add(sa2);
+
+            listBox.ItemsSource = Accounts;
+
         }
 
         private void buttonDeposit_Click(object sender, RoutedEventArgs e)
@@ -68,6 +71,27 @@ namespace Exam
             textBoxTransactionAmount.Text = "";
         }
 
-  
+        private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            CurrentAccount selectedCA = listBox.SelectedItem as CurrentAccount;
+            SavingsAccount selectedSA = listBox.SelectedItem as SavingsAccount;
+            Account accountEmployee = (Account)listBox.SelectedItem;
+
+            // If Current Account is pressed - this if statement runs and data is displayed
+            if (selectedCA != null)
+            {
+                textBlockFirstName.Text = selectedCA.FirstName;
+                textBlockLastName.Text = selectedCA.LastName;
+                textBlockBalance.Text = selectedCA.Balance.ToString();
+            }
+
+            // If Savings Account is pressed - this if statement runs and data is displayed
+            else if (selectedSA != null)
+            {
+                textBlockFirstName.Text = selectedSA.FirstName;
+                textBlockLastName.Text = selectedSA.LastName;
+                textBlockBalance.Text = selectedSA.Balance.ToString();
+            }
+        }
     }
 }
