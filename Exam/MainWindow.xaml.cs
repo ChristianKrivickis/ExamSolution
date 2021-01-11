@@ -33,18 +33,18 @@ namespace Exam
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             // Part time employees (First name, last name, status, hourly rate, hours worked)
-            CurrentAccount ca1 = new CurrentAccount("Jane", "Jones", "Part Time", 10, 15);
-            CurrentAccount ca2 = new CurrentAccount("John", "Smith", "Part Time", 15, 14);
+            CurrentAccount ca1 = new CurrentAccount("Jane", "Jones", 45748275, 1500);
+            CurrentAccount ca2 = new CurrentAccount("John", "Smith", 679569, 30000);
 
             // Full time employees (First name, last name, status, salary)
-            SavingsAccount sat1 = new SavingsAccount("Joe", "Murphy", "Full Time", 24000);
-            SavingsAccount sa2 = new SavingsAccount("Jess", "Walsh", "Full Time", 25000);
+            SavingsAccount sa1 = new SavingsAccount("Joe", "Murphy", 95684, 4000);
+            SavingsAccount sa2 = new SavingsAccount("Jess", "Walsh", 7535737, 9999);
 
             // Added Full time and Part time employees to observable list
-            Accounts.Add(pt1);
-            Accounts.Add(pt2);
-            Accounts.Add(ft1);
-            Accounts.Add(ft2);
+            Accounts.Add(ca1);
+            Accounts.Add(ca2);
+            Accounts.Add(sa1);
+            Accounts.Add(sa2);
         }
 
         private void buttonDeposit_Click(object sender, RoutedEventArgs e)
