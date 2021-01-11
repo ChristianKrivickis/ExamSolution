@@ -11,8 +11,8 @@
             <ColumnDefinition Width="347*"/>
             <ColumnDefinition Width="49*"/>
         </Grid.ColumnDefinitions>
-        <CheckBox x:Name="checkBoxCurrent" Content="Current Account" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="32,29,0,0"/>
-        <CheckBox x:Name="checkBoxSavings" Content="Savings Accounts" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="156,29,0,0"/>
+        <CheckBox x:Name="checkBoxCurrent" Content="Current Account" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="32,29,0,0" Click="checkBox_Click"/>
+        <CheckBox x:Name="checkBoxSavings" Content="Savings Accounts" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="156,29,0,0" Click="checkBox_Click"/>
         <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="248" VerticalAlignment="Top" Width="195" Margin="32,87,0,0" SelectionChanged="listBox_SelectionChanged"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Account Type" VerticalAlignment="Top" Margin="32,58,0,0"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Account Details" VerticalAlignment="Top" Margin="270,58,0,0" Width="151"/>
